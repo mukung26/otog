@@ -7,35 +7,155 @@
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
-
 <body>
-    <header>One Team One Goal</header>
+<header>One Team One Goal</header>
 
-    <div class="content">
-        <strong>Keep up the good work!</strong>
-
+<div class="content">
+  <strong>Keep up the good work!</strong>
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 20px; gap: 20px;">
+    <!-- Left Container: Stacking Tables -->
+    <div style="display: flex; flex-direction: column; width: 70%;">
         <table>
             <tr>
-                <th><a href="https://app.slack.com/client/T068D8F3KAT/C068QT51NS1" target="_blank">Slack</a></th>
-                <th><a href="https://cs.shopee.ph/portal/inhouse/workstation/items" target="_blank">Inhouse</a></th>
-                <th><a href="https://cs.shopee.ph/portal/info/search" target="_blank">Backend</a></th>
+              <th style="text-align: center;"><span class="important-link"><a href="https://app.slack.com/client/T068D8F3KAT/C068QT51NS1" target="_blank">Slack</a></span></th>
+              <th style="text-align: center;"><span class="important-link"><a href="https://cs.shopee.ph/portal/inhouse/workstation/items" target="_blank">Inhouse</a></span></th>
+              <th style="text-align: center;"><span class="important-link"><a href="https://cs.shopee.ph/portal/info/search" target="_blank">Backend</a></span></th>
+              <th style="text-align: center;"><span class="important-link"><a href="https://lookerstudio.google.com/u/0/reporting/ccdc3c5e-0504-4f4c-8034-0bac37764f51/page/tUsdD" target="_blank">SPX-Logistics</a></span></th>
+              <th style="text-align: center;"><span class="important-link"><a href="https://spx.shopee.ph/#/index" target="_blank">SPX-FMS</a></span></th>
+              <th style="text-align: center;"><span class="important-link"><a href="https://lookerstudio.google.com/reporting/525613f8-d08b-408d-8752-7d7c35e470a5/page/1AV9D" target="_blank">SPX-Backlog</a></span></th>
+              <th style="text-align: center;"><span class="important-link"><a href="https://cs.shopee.ph/portal/inhouse/kb-client" target="_blank">KnowledgeBase</a></span></th>
+              <th style="text-align: center;"><span class="important-link"><a href="https://help.shopee.ph/" target="_blank">HelpCenter</a></span></th>
             </tr>
         </table>
+        
+        <!-- Courier Table (Top) -->
+        <table style="background-color:rgba(0, 0, 0, 0); width: 100%; margin-bottom: 15px;">
+            <tr>
+                <th>Courier</th>
+                <th>Case Info 3PL</th>
+                <th>Contact</th>
+                <th>Days Open</th>
+                <th>Hours</th>
+            </tr>
+            <tr>
+                <td>
+                    <button class="copy-btn" onclick="copyToClipboard('https://spx.ph/#/', this)">
+                        <img src="https://img.icons8.com/?size=48&id=86206&format=png" alt="Copy" width="13" height="13">
+                    </button>
+                    <span class="courier-name"><a href="https://spx.ph/#/" target="_blank">SPX Express</a></span>
+                </td>
+                <td>Crossborder Standard Express</td>
+                <td>(02) 8880-5200</td>
+                <td>Monday to Saturday</td>
+                <td>8:00 AM to 7:00 PM</td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="copy-btn" onclick="copyToClipboard('https://www.jtexpress.ph/index/query/gzquery.html', this)">
+                        <img src="https://img.icons8.com/?size=48&id=86206&format=png" alt="Copy" width="13" height="13">
+                    </button>
+                    <span class="courier-name"><a href="https://www.jtexpress.ph/index/query/gzquery.html" target="_blank">J&T Express</a></span>
+                </td>
+                <td>Crossborder J&T</td>
+                <td>(02) 8 911 1888<br>customerca@jtexpress.ph</td>
+                <td>Monday to Sunday</td>
+                <td>8:00 AM to 6:00 PM</td>
+            </tr>
+            <tr>
+              <td>
+                  <button class="copy-btn" onclick="copyToClipboard('https://www.xde.com.ph/track_and_trace/', this)">
+                        <img src="https://img.icons8.com/?size=48&id=86206&format=png" alt="Copy" width="13" height="13">
+                    </button>
+                  <span class="courier-name"><a href="https://www.xde.com.ph/track_and_trace/" target="_blank">XDE Logistics</a></span>
+              </td>
+              <td>Crossborder XDE</td>
+              <td>0917 136 4933<br>0917 135 9933<br>customercare@xde.com.ph<br>inquiry@xde.com.ph</td>
+              <td>Monday to Saturday</td>
+              <td>8:00 AM to 6:00 PM</td>
+          </tr>
+          <tr>
+              <td>
+                  <button class="copy-btn" onclick="copyToClipboard('https://express.2go.com.ph/tracking/', this)">
+                        <img src="https://img.icons8.com/?size=48&id=86206&format=png" alt="Copy" width="13" height="13">
+                    </button>
+                  <span class="courier-name"><a href="https://express.2go.com.ph/tracking/" target="_blank">2GO Express</a></span>
+              </td>
+              <td>Crossborder 2GO</td>
+              <td>(02) 8779 9222<br>customerservice@2go.com.ph</td>
+              <td>Monday to Saturday</td>
+              <td>8:00 AM to 6:00 PM</td>
+          </tr>
+          <tr>
+              <td>
+                  <button class="copy-btn" onclick="copyToClipboard('https://www.ytoexpress.ph/homePage', this)">
+                        <img src="https://img.icons8.com/?size=48&id=86206&format=png" alt="Copy" width="13" height="13">
+                    </button>
+                  <span class="courier-name"><a href="https://www.ytoexpress.ph/homePage" target="_blank">YTO Express</a></span>
+              </td>
+              <td>Crossborder YTO</td>
+              <td>(02) 8459 9999<br>cs.ytoexpress_ph@yto.net.cn</td>
+              <td>Monday to Saturday</td>
+              <td>9:00 AM to 6:00 PM</td>
+          </tr>
+          <tr>
+              <td>
+                  <button class="copy-btn" onclick="copyToClipboard('https://www.flashexpress.ph/tracking/', this)">
+                        <img src="https://img.icons8.com/?size=48&id=86206&format=png" alt="Copy" width="13" height="13">
+                    </button>
+                  <span class="courier-name"><a href="https://www.flashexpress.ph/tracking/" target="_blank">Flash Express</a></span>
+              </td>
+              <td>Crossborder FEX</td>
+              <td>(02) 8539 4002<br>customerservice@flashexpress.ph</td>
+              <td>Monday to Sunday</td>
+              <td>8:00 AM to 8:00 PM</td>
+          </tr>
+          <tr>
+              <td>
+                <button class="copy-btn" onclick="copyToClipboard('https://wsi-locator.xarosa.online/', this)">
+                        <img src="https://img.icons8.com/?size=48&id=86206&format=png" alt="Copy" width="13" height="13">
+                    </button>
+                <span class="courier-name"><a href="https://wsi-locator.xarosa.online/" target="_blank">Worklink Services Inc</a></span>
+              </td>
+              <td>Crossborder Standard Express</td>
+              <td>(02) 8533 3888<br>cs_ecom@wsi.ph</td>
+              <td>Monday to Sunday (Metro Manila)<br> Monday to Saturday (Mindanao)</td>
+              <td>8:00 AM to 8:00 PM (Metro Manila)<br> 8:00 AM to 5:00 PM (Mindanao)</td>
+          </tr>
+        </table>
+    </div><!--end-table-->
 
-        <div class="image-container">
-            <img id="parcelImage" src="images/parcel-journey.png" alt="Shopee Parcel Journey">
+  <!-- Right Container: Parcel Journey Image -->
+    <div class="image-container">
+      <img id="parcelImage" 
+          src="https://lh7-us.googleusercontent.com/zSbIXv9mvOgClsLgR4U2_wC11XlJGEJpQ8dwzrIHlkjePYneli9civuQNb76FsoKqk8UXxK-FmRU5E2Xo_DrCAyWsFqmu2DMdYMT1p8I96fFUfnefm7y_yNVRez7WttNO1DKT6GqLC3mqCy3lU6VTTragVx-BbxfCb0Sw7mMkSs-Y9j3B__HOgVvZ-438g" alt="Shopee Parcel Journey" loading="lazy" style="max-width: 450px; height: auto; margin-top: 59px; margin-right: 20px; text-align: left:">
+          <div class="overlay">
+          <p>Click to expand. Use Scroll wheel.</p>
         </div>
-    </div>
+    </div><!--end-image-container-->
 
-    <footer>
-        Shopee External - <a href="https://www.sixelevenbpo.com/" target="_blank">Sixeleven Global Services</a>
-    </footer>
+  </div><!--end-mainTable--> 
 
-    <div id="imageModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <img id="modalImage" src="" alt="Zoomed Image">
-        </div>
-    </div>
+  <div id="imageModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <img id="modalImage" src="" alt="Zoomed Image">
+      </div>
+  </div><!--end-imageModal-->
+
+  <!-- Main container where dynamic content will be added -->
+  <div class="main-container" id="mainContainer"></div>
+
+  <!-- Overlay for Expanded Mode -->
+  <div id="overlay" class="overlay" onclick="closeIframe(event)">
+      <div class="expanded-container" onclick="event.stopPropagation()">
+          <button class="close-btn" onclick="closeIframe(event)">Close</button>
+          <iframe id="expandedIframe" width="100%" height="100%" loading="lazy"></iframe>
+      </div>
+  </div><!--end-overlayFrame-->
+</div><!--end-content-->
+
+<footer>
+    Shopee External - <a href="https://www.sixelevenbpo.com/" target="_blank">Sixeleven Global Services</a>
+</footer>
 </body>
 </html>
